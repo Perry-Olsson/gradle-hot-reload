@@ -1,8 +1,10 @@
 package gradle.hot.reload.api
 
-import gradle.hot.reload.lib.SayHello
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 
+@SpringBootApplication
 class App
-fun main() {
-    println(SayHello().hello())
+fun main(args: Array<String>) {
+    runApplication<App>(*args)
 }
