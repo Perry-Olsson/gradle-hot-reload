@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  user:
+    container_name: gradle-hot-reload
+    build: ./app/api
+    user: gradle
+    volumes:
+      - ./:/home/gradle/project
+    ports:
+      - "8080:8080"
+      - "8000:8000"
