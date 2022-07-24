@@ -8,4 +8,5 @@
  */
 
 rootProject.name = "gradle-hot-reload"
-include("app", "list", "utilities")
+include("api", "list", "utilities")
+include("lib")
